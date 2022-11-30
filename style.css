@@ -39,7 +39,7 @@ main input {
     width: 70vw;
     font-size: 30px;
     border-right: none;
-    border: 1px solid blue;
+    border: 2px solid blue;
     padding-left: 20px;
     
     
@@ -60,11 +60,18 @@ main input {
     
 }
 
+.taskSection{
+    display: flex;
+    flex-direction: column
+}
+
 .newTask{
     display: flex;
     flex-direction: row;
     justify-content: center;
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.393));
+    margin-bottom: 30px;
+    font-size: 30px;
     
 }
 
@@ -111,4 +118,8 @@ main input {
     border-radius: 50%;
     width: 30px;
     height: 30px;
+}
+
+.material-symbols-outlined {
+    margin-right: 20px;
 }
