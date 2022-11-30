@@ -1,0 +1,114 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(232, 231, 230);
+    text-align: center;
+}
+
+h1 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 3em;
+    
+}
+
+main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.addTask {
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.393));
+}
+
+main input {
+    height: 110px;
+    width: 70vw;
+    font-size: 30px;
+    border-right: none;
+    border: 1px solid blue;
+    padding-left: 20px;
+    
+    
+}
+
+#taskButton {
+    height: 111px; 
+    width: 20vw;
+    font-size: 20px;
+    background-color: green;
+    color: aliceblue;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    font-weight: bolder;
+    
+    
+}
+
+.newTask{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.393));
+    
+}
+
+
+.newTaskText {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 80px;
+    background-color: white;
+    width: 70vw;
+    padding-left: 20px;
+    
+}
+.newTaskButton {
+    width: 20vw;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+
+.newTaskButton:hover {
+    cursor: pointer;
+}
+
+.checked {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    color: aliceblue;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.unchecked {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: white;
+    border: 3px solid green;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
