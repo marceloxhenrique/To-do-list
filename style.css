@@ -18,112 +18,125 @@ header {
     font-size: 25px;
 }
 
-main{
+main {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 
-.EnterTask {
+.addNewTask {
     display: flex;
     flex-direction: row;
     width: 90%;
-    justify-content: center;    
+    margin-bottom: 30px;
+
 }
 
-#inputTask {
+#inputNewTask {
     width: 80%;
-    height: 90px;
-    font-size: 2rem;
-    border: 1px solid blue;
+    height: 100px;
     padding-left: 20px;
-
+    font-size: 25px;
+    background-color: white;
+    border: 1px solid blue;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.478);
 }
 
-.buttonAdd {
+#buttonAddNewTask {
     width: 20%;
-    height: 90px;
-    font-size: 18px;
-    font-weight: bold;
+    height: 100px;
     background-color: green;
-    color: aliceblue;
-    border-radius: 0px 10px 10px 0px;
+    color: white;
     border: none;
+    border-radius: 0px 10px 10px 0px;
+    font-size: 20px;
+    font-weight: bold;
     cursor: pointer;
-    
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.478);
 }
 
-.newTaskSection {
+.newTask-area {
     width: 90%;
-    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
 
 .newTask {
-    
     display: flex;
     flex-direction: row;
-
+    width: 90vw;
+    height: 70px;
+    margin-bottom: 20px;
+    filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.398));
 }
 
-.newTaskTexto {
+.icone-area {
+    width: 10%;
+    background-color: white;
     display: flex;
-    width: 80%;
-    font-size: 18px;
-    background-color: white;
     align-items: center;
-    padding-left: 20px;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 38px;
+}
+
+.text-area {
+    width: 75%;
     background-color: white;
-    white-space: nowrap;
-    overflow: hidden;
-    height: 60px;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 19px;
+}
+
+.button-area {
+    width: 15%;
     
 }
 
-.checked{
+#buttonDelete {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+}
+
+.unchecked  span {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+    border: 2px solid green;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+.checked span{
     background-color: green;
     color: white;
-    font-weight: bold;
-    font-size: 25px;
     border-radius: 50%;
-    margin-right: 20px;
-    border: none;
-}
-
-.unchecked{
+    height: 30px;
+    width: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 20px;
-    color: white;
-    font-weight: bold;
-    font-size: 19px;
-    border-radius: 50%;
-    border: 3px solid green;
-}
-
-.newTaskButton {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 20%;
-    height: 60px;
-    border: none;
-    background-color: red;
-    color: aliceblue;
-    font-size: 15px;
-    font-weight: bold;
-    border-radius: 0px 7px 7px 0px;
-    cursor: pointer;
-    margin-bottom: 30px;
     
-}
-
-.trash {
-    margin-right: 5px;
 
 }
+.checked .icone-area{
+    background-color: rgb(184, 225, 189);
+}
+
+.checked .text-area {
+    background-color: rgb(184, 225, 189);
+    text-decoration: line-through;
+    color: rgb(159, 157, 157);
+}
+
